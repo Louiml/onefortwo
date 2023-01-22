@@ -4,9 +4,9 @@ section .text
 _start:
     call _hello
     call _goodbye
-    mov eax, 1         ; system call number (sys_exit)
-    xor ebx, ebx       ; exit status (0)
-    int 0x80           ; call kernel
+    mov eax, 1   
+    xor ebx, ebx   
+    int 0x80   
 
 _hello:
     call load_hello
